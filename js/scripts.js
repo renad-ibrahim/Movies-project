@@ -220,3 +220,25 @@ function search(searchInput){
     }
     displayMovies(searchMovies);
 };
+
+
+var allMovies = [];
+$("#search2").on("click" ,async function(){
+    
+    var response =  await fetch("https://api.themoviedb.org/3/search/movie?api_key=eba8b9a7199efdcb0ca1f96879b83c44&query=all&language=en-US&page=1")
+    var finalDataFromApi = await response.json();
+
+    allMovies = finalDataFromApi.results;
+    console.log(allMovies);
+    displayMovies(allMovies);
+} );
+function searchTwo(m){
+    var searchAllMovies = []; 
+
+    for(i=0 ; i<allMovies.length ;i++ ){
+        if(allMovies[i].original_title.toLowerCase().includes(m.toLowerCase()) == true){
+            searchAllMovies.push(allMovies[i]);
+        }
+    }
+    displayMovies(searchAllMovies);
+};
