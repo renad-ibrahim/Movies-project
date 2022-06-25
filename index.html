@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exam</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+    <aside id="aside">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div id="links" class="col-10 p-0">
+                    <div  class="navLinks bg-black px-4 h-100">
+                          <ul class="list-unstyled p-3">
+                            <li class="l1 py-3"> <a id="now" href="#" class="text-decoration-none">Now Playing</a> </li>
+                            <li class="l2 py-3"> <a id="trending" href="#" class="text-decoration-none">Trending </a> </li>
+                            <li class="l2 py-3"> <a id="popular" href="#" class="text-decoration-none">Popular </a> </li>
+                            <li class="l3 py-3"> <a id="rated" href="#" class="text-decoration-none">Top Rated</a> </li>
+                            <li class="l4 py-3"> <a id="upComing" href="#" class="text-decoration-none">Upcoming</a> </li>
+                            <li class="l5 py-3"> <a href="#contact" class="text-decoration-none">Contact Us</a> </li>
+                          </ul>
+                          <div class="socialLinks position-fixed">
+                            <p>
+                              <i class=" ps-3 fa-brands fa-facebook-f"></i>
+                              <i class=" ps-3 fa-brands fa-twitter"></i>
+                              <i class=" ps-3 fa-solid fa-globe"></i>
+                            </p>
+                          </div>
+                          <div class="rightReserved position-absolute flex-wrap overflow-hidden">
+                            <p class="text-muted">Contact Us Copyright<br> Â© 2022 All Rights<br> Reserved.</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center h-100">
+                    <div class="">
+                        <div class="logo">
+                            <img src="images/logo.png" />
+                        </div>
+                        <div id="sideIcon"  class="position-fixed top-50">
+                           <i id="navBtn" class=" fs-3 fa-solid fa-bars"></i>
+                        </div>
+                        <div class="endIcons position-fixed">
+                            <i class="fs-4 fa-solid fa-globe"></i>
+                            <br>
+                            <i class="fs-4 fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </aside>
+    <section class="pt-3 pb-5">
+        <div class="container">
+    <!--*********************************************-->
+            <div class="searches p-5 mb-4">
+                <form>
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-md-6 col-sm-12 p-3">
+                        <input oninput="search(this.value)" id="search1" type="text" class="bg-black rounded-0 form-control text-center border-top-0 border-start-0 border-end-0" placeholder="get movies by word..." name="email">
+                      </div>
+                      <div class="col-md-6 col-sm-12 p-3">
+                        <input oninput="search(this.value)" id="search2" type="text" class="bg-black rounded-0 form-control text-center border-top-0 border-start-0 border-end-0" placeholder="Search..." name="pswd">
+                      </div>
+                    </div>
+                  </form>
+            </div>
+    <!--*********************************************-->
+            <div class="movies">
+               <div class="row" id="rowsData">
+                    
+                </div> 
+             </div>
+    <!--*********************************************-->
+    </div>
+    </section> 
+    <!--*********************Contact Form ************************--> 
+    <footer id="contact" class="pt-5 pb-5">
+        <div class="container p-5 ">
+            <h3 class="text-white">ContactUs...</h3>
+            <form id="form">
+                <div class="row pt-3">
+                  <div class="col-md-6 col-sm-12">
+                    <input id="userName" type="text" class=" rounded-0 form-control border-top-0 border-start-0 border-end-0" placeholder="Enter Your Name" name="name">
+                    <p id="nameMsg"></p>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <input id="userEmail" type="email" class=" rounded-0 form-control border-top-0 border-start-0 border-end-0" placeholder="Enter Email" name="email">
+                    <p id="emailMsg"></p>
+                  </div>
+                </div>
+
+                <div class="row pt-3">
+                  <div class="col-md-6 col-sm-12">
+                    <input id="userNumber" type="tel" class=" rounded-0 form-control border-top-0 border-start-0 border-end-0" placeholder="Enter Phone" name="phone">
+                    <p id="phoneMsg"></p>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <input id="userAge" type="number" class=" rounded-0 form-control border-top-0 border-start-0 border-end-0" placeholder="Enter Age" name="age">
+                    <p id="ageMsg"></p>
+                  </div>
+                </div>
+
+                <div class="row pt-3">
+                  <div class="col-md-6 col-sm-12">
+                    <input id="userPass" type="password" class=" rounded-0 form-control border-top-0 border-start-0 border-end-0" placeholder="Enter Password" name="pass">
+                    <p id="message1" class=""></p>
+                </div>
+                  <div class="col-md-6 col-sm-12">
+                    <input id="userRePass" type="password" class=" rounded-0 form-control border-top-0 border-start-0 border-end-0" placeholder="Enter Repassowrd" name="pass">
+                    <p id="message2" class=""></p>
+                </div>
+                </div>
+              </form>
+              <button  id="btn" type="submit" class="btn-outline-danger bg-transparent mt-5 px-4 py-2" >Submit</button>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

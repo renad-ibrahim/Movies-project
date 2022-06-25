@@ -1,0 +1,70 @@
+aside{
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+}
+.navIcon i , .endIcons i , #sideIcon i{
+    padding: 13px;
+    cursor: pointer;
+}
+.endIcons{
+    top: calc(100% - 12%);
+}
+aside img{
+    width: 50px;
+    padding: 10px;
+}
+.movie-info{
+    top: 100%;
+    transition: all 0.9s;
+    -webkit-transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    -ms-transition: all 0.9s;
+    -o-transition: all 0.9s;
+}
+.movie{
+    overflow: hidden;
+}  
+.movie:hover .movie-info{
+    top: 0px;
+}
+input{
+    text-align: center;
+}
+.form-control{
+    background-color: black;
+}
+li {
+    overflow: hidden;
+}
+li a {
+    color: #fff;
+    position: relative;
+    top: 35px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+li a:hover{
+    color: rgb(243, 54, 54);
+}
+.socialLinks{
+    top: calc(100% - 150px);
+}
+.socialLinks i {
+    color: white;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.socialLinks p i:hover{
+    color: rgb(243, 54, 54);
+}
+.rightReserved{
+top: calc(100% - 100px);
+}
